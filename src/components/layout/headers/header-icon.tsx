@@ -6,6 +6,7 @@ type HeaderIconProps = {
   alt: string;
   width?: number;
   height?: number;
+  isHighlight?: boolean;
 };
 
 export const HeaderIcon = ({
@@ -13,6 +14,7 @@ export const HeaderIcon = ({
   alt,
   width = 24,
   height = 24,
+  isHighlight = false,
 }: HeaderIconProps) => {
   const pathFormater = src.startsWith("/") ? src : `/${src}`;
   return (
@@ -25,7 +27,8 @@ export const HeaderIcon = ({
         border
         border-gray-200 
         rounded-sm
-        hover:bg-gray-100
+     
+        ${isHighlight ? "bg-blue-400 text-blue-900 hover:to-blue-500" : "   hover:bg-gray-100"}
             `}
     >
       <Image

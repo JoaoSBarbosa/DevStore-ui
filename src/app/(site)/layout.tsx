@@ -1,4 +1,5 @@
-import Header from "@/components/layout/header";
+import Header from "@/components/layout/headers/header";
+import { HeaderProvider } from "@/contexts/header/header-provider";
 import React from "react";
 
 export default function SiteLayout({
@@ -6,8 +7,11 @@ export default function SiteLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <div>
-      <Header/>
-      { children }
+      <HeaderProvider>
+        <Header />
+      </HeaderProvider>
+
+      {children}
     </div>
   );
 }
