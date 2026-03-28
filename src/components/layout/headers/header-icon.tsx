@@ -1,12 +1,12 @@
 import Image from "next/image";
-import { string } from "zod";
 
 type HeaderIconProps = {
   src: string;
   alt: string;
   width?: number;
   height?: number;
-  isHighlight?: boolean;
+  selected?: boolean;
+  srcSelected?: string;
 };
 
 export const HeaderIcon = ({
@@ -14,30 +14,47 @@ export const HeaderIcon = ({
   alt,
   width = 24,
   height = 24,
-  isHighlight = false,
+  selected = false,
+  srcSelected,
 }: HeaderIconProps) => {
-  const pathFormater = src.startsWith("/") ? src : `/${src}`;
+  const baseClasses =
+    "size-12 flex items-center justify-center border rounded-sm";
+  const selectedClasses =
+    "bg-blue-600 text-blue-900 border-blue-800 hover:to-blue-500";
+  const defaultClasses = "hover:bg-gray-100  border-gray-200 ";
+
+  const FormatterSrc = (src: string | null | undefined) => {
+    if (src == null) return "/asstes/ui/user-line.png";
+    if (src.startsWith("/")) return src;
+    return `/${src}`;
+  };
+
   return (
     <div
       className={`
-        size-12 
-        flex 
-        items-center 
-        justify-center
-        border
-        border-gray-200 
-        rounded-sm
-     
-        ${isHighlight ? "bg-blue-400 text-blue-900 hover:to-blue-500" : "   hover:bg-gray-100"}
-            `}
+        ${baseClasses} 
+        ${selected ? selectedClasses : defaultClasses}
+        `}
     >
-      <Image
-        className="size-6"
-        src={pathFormater}
-        alt={alt}
-        width={width}
-        height={height}
-      />
+      {selected && (
+        <Image
+          className="size-6"
+          src={FormatterSrc(srcSelected)}
+          alt={alt}
+          width={width}
+          height={height}
+        />
+      )}
+
+      {!selected && (
+        <Image
+          className="size-6"
+          src={FormatterSrc(src)}
+          alt={alt}
+          width={width}
+          height={height}
+        />
+      )}
     </div>
   );
 };

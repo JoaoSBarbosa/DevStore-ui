@@ -43,9 +43,10 @@ export default function Header() {
 
             <div className="md:hidden cursor-pointer" onClick={toggleMenu}>
               <HeaderIcon
-                isHighlight={isMenuOpen}
+                selected={isMenuOpen}
                 alt="menu"
                 src="/assets/ui/menu-line.png"
+                srcSelected="/assets/ui/menu-line-white.png"
               />
             </div>
           </div>
