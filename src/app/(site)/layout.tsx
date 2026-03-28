@@ -1,5 +1,5 @@
-import Header from "@/components/layout/headers/header";
-import { HeaderProvider } from "@/contexts/header/header-provider";
+import { Header } from "@/features/header";
+import { HeaderProvider } from "@/features/header/context/header-provider";
 import React from "react";
 
 export default function SiteLayout({

@@ -1,4 +1,4 @@
-import { MenuHeaderType } from "@/types/header/menu-header-type";
+import { MenuHeaderType } from "@/features/header/types/menu-header-type";
 import Image from "next/image";
 import Link from "next/link";
 

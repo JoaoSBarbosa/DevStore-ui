@@ -1,4 +1,4 @@
-import { Menu } from "@/data/header/header-menu";
+import { Menu } from "@/features/header/data/header-menu";
 import { HeaderMenuItem } from "./header-menu-items";
 
 export const HeaderMenu = () => {

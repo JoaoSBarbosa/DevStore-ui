@@ -2,9 +2,10 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import HeaderIcon from "./header-icon";
+import { HeaderIcon } from "./header-icon";
 import HeaderMenu from "./header-menu";
-import { useHeader } from "@/contexts/header/use-header";
+import { HeaderShearch } from "./header-search";
+import { useHeader } from "../context/use-header";
 
 export default function Header() {
   const { toggleMenu, isMenuOpen } = useHeader();
@@ -54,6 +55,8 @@ export default function Header() {
       </div>
 
       {isMenuOpen && <HeaderMenu />}
+
+      <HeaderShearch />
       <div className="md:hidden p-6">Busca</div>
     </header>
   );
