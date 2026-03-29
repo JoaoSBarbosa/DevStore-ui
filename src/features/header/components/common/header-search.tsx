@@ -1,19 +1,31 @@
 "use client";
 
 import Image from "next/image";
-import { useHeader } from "../context/use-header";
+import { useHeader } from "../../context/use-header";
 
-export const HeaderShearch = () => {
-  const { search, setSearch } = useHeader();
+type HeaderSearchProps = {
+  padding?: PaddingOptions;
+};
+
+export enum PaddingOptions {
+  NONE = "",
+  DEFAULT = "p-6",
+  SMALL = "p-4",
+}
+
+export const HeaderSearch = ({
+  padding = PaddingOptions.DEFAULT,
+}: HeaderSearchProps) => {
+  const { search, setSearch, isMenuOpen } = useHeader();
 
   return (
-    <div className="p-6 md:hidden">
+    <div className={`pt-0 ${padding}`}>
       <div
         className={`
         flex items-center gap-3 
         px-4 py-3 w-full border border-gray-200
         rounded-md
-    `}
+        `}
       >
         <Image
           src="/assets/ui/search.png"

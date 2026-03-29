@@ -1,6 +1,6 @@
 import { MenuHeaderType } from "@/features/header/types/menu-header-type";
 
-export const Menu: MenuHeaderType[] = [
+export const MenuData: MenuHeaderType[] = [
   {
     id: 1,
     label: "Camisa",
@@ -8,12 +8,17 @@ export const Menu: MenuHeaderType[] = [
   },
   {
     id: 2,
-    label: "Kit",
+    label: "Kits",
     href: "/categories/kit",
   },
   {
     id: 3,
     label: "Acessórios",
     href: "/categories/accessories",
+  },
+  {
+    id: 4,
+    label: "Eletrônicos",
+    href: "/categories/electronics",
   },
 ];

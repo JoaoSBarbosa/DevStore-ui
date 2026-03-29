@@ -1,5 +1,4 @@
-import { Header } from "@/features/header";
-import { HeaderProvider } from "@/features/header/context/header-provider";
+import { Header, HeaderProvider } from "@/features/header";
 import React from "react";
 
 export default function SiteLayout({
