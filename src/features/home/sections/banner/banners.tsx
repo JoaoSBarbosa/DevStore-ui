@@ -17,7 +17,6 @@ export const Banners = ({ banners }: BannersProps) => {
 
   const startAutoSlide = () => {
     stopAutoSlide();
-
     timeRef.current = setInterval(() => {
       setActiveIndex((prev) => (prev + 1) % banners.length);
     }, AUTO_SLIDE_INTERVAL);
@@ -27,16 +26,6 @@ export const Banners = ({ banners }: BannersProps) => {
     if (timeRef.current) {
       clearInterval(timeRef.current);
     }
-  };
-
-  const goToNext = () => {
-    setActiveIndex((activeIndex) => {
-      if (activeIndex >= banners.length - 1) {
-        return 0;
-      } else {
-        return activeIndex + 1;
-      }
-    });
   };
 
   const goToSlide = (index: number) => {
