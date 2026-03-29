@@ -4,7 +4,7 @@ import "./globals.css";
 
 
 export const metadata: Metadata = {
-  title: "Dev Store",
+  title: "DevStore",
   description: "E-commerce de produtos para dev",
 };
 
