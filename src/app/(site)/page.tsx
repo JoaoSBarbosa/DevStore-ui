@@ -1,7 +1,5 @@
-export default function Page(){
-return(
-    <div>
-    <h1>OLá, mundo</h1>
-  </div>
-)
+import Home from "@/features/home";
+
+export default function Page() {
+  return <Home />;
 }
