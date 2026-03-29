@@ -10,7 +10,7 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: "DevStore",
-  description: "E-commerce de produtos para dev",
+  description: "E-commerce de produtos para desenvolvedores",
 };
 
 export default function RootLayout({
