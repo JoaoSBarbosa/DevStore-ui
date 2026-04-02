@@ -5,10 +5,10 @@ export const BestSellersData: Product[] = [
   {
     id: 1,
     name: "Camisa Node Js - Verde",
-    price: 2999.99,
+    price: 69.99,
     liked: true,
     image: "/assets/products/camiseta-node.png",
-    paymentOptions: ["Boleto", "Cartão", "Pix"],
+    paymentOptions: "Em até 2x de R$ 35,00 sem juros",
   },
   {
     id: 2,
@@ -16,7 +16,7 @@ export const BestSellersData: Product[] = [
     price: 69.99,
     liked: true,
     image: "/assets/products/camiseta-laravel-branca.png",
-    paymentOptions: ["Boleto", "Cartão", "Pix"],
+    paymentOptions: "Em até 2x de R$ 35,00 sem juros",
   },
   {
     id: 3,
@@ -24,7 +24,7 @@ export const BestSellersData: Product[] = [
     price: 69.99,
     liked: true,
     image: "/assets/products/camiseta-laravel-azul.png",
-    paymentOptions: ["Boleto", "Cartão", "Pix"],
+    paymentOptions: "Em até 2x de R$ 35,00 sem juros",
   },
   {
     id: 4,
@@ -32,6 +32,6 @@ export const BestSellersData: Product[] = [
     price: 69.99,
     liked: true,
     image: "/assets/products/camiseta-react-preta.png",
-    paymentOptions: ["Boleto", "Cartão", "Pix"],
+    paymentOptions: `Em até 2x de R$ 35,00 sem juros`,
   },
 ];
