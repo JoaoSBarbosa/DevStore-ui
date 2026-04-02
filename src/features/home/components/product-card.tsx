@@ -46,7 +46,7 @@ export const ProductCard = ({ product }: ProductCardProps) => {
             alt={product.name}
             width={200}
             height={200}
-            className="max-w-full h-48"
+            className="max-w-full h-42 object-contain"
           />
         </div>
         <div className="mt-9 w-full">

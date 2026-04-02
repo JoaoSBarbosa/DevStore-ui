@@ -5,6 +5,7 @@ import { StoreBenefitsContainer } from "./sections/store-benefits/store-benefits
 import { ProductListSkeleton } from "./components/product-list-skeleton";
 import { Suspense } from "react";
 import { MostViewedProduct } from "./sections/most-viewed/most-viewed-product";
+import { BestSellers } from "./sections/best-sellers/best-sellers";
 
 export default function Home() {
   const data = banners;
@@ -19,7 +20,9 @@ export default function Home() {
         <MostViewedProduct />
       </Suspense>
 
-      <Suspense fallback={<ProductListSkeleton />}></Suspense>
+      <Suspense fallback={<ProductListSkeleton />}>
+        <BestSellers />
+      </Suspense>
     </main>
   );
 }
