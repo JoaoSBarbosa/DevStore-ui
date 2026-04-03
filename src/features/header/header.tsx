@@ -2,13 +2,13 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { HeaderIcon } from "./common/header-icon";
-import { useHeader } from "../context/use-header";
+import { HeaderIcon } from "./components/common/header-icon";
+import { useHeader } from "./context/use-header";
 
-import { HeaderDesktopContainer } from "./desktop/header-desktop-container";
-import { HeaderMobileContainer } from "./mobile/header-mobile-container";
-import { HeaderActions } from "./common/header-actions";
-import { HeaderLogo } from "./common/header-logo";
+import { HeaderDesktopContainer } from "./components/desktop/header-desktop-container";
+import { HeaderMobileContainer } from "./components/mobile/header-mobile-container";
+import { HeaderActions } from "./components/common/header-actions";
+import { HeaderLogo } from "./components/common/header-logo";
 
 export default function Header() {
   const { toggleMenu, isMenuOpen } = useHeader();

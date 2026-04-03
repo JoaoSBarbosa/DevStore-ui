@@ -40,7 +40,7 @@ export const BestSellersData: Product[] = [
 
 export const MostViewedData: Product[] = [
   {
-    id: 1,
+    id: 5,
     name: "Boné DevWeb - Preto",
     price: 59.99,
     liked: false,
@@ -48,7 +48,7 @@ export const MostViewedData: Product[] = [
     paymentOptions: "Em até 2x de R$ 30,00 sem juros",
   },
   {
-    id: 2,
+    id: 6,
     name: "Boné DevWeb - Azul",
     price: 59.99,
     liked: false,
@@ -56,7 +56,7 @@ export const MostViewedData: Product[] = [
     paymentOptions: "Em até 2x de R$ 30,00 sem juros",
   },
   {
-    id: 3,
+    id: 7,
     name: "Boné DevWeb - Cinza",
     price: 59.99,
     liked: false,
@@ -64,7 +64,7 @@ export const MostViewedData: Product[] = [
     paymentOptions: "Em até 2x de R$ 30,00 sem juros",
   },
   {
-    id: 4,
+    id: 8,
     name: "Camisa React Native - Preta",
     price: 69.99,
     liked: false,

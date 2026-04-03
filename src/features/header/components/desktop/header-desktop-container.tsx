@@ -1,9 +1,9 @@
-import { MenuData } from "../../data/header-menu";
 import { DesktopMenu } from "./desktop-menu";
 import { HeaderSearch, PaddingOptions } from "../common/header-search";
+import { MenuList } from "@/shared/data/menu-data";
 
 export const HeaderDesktopContainer = () => {
-  const menus = MenuData;
+  const menus = MenuList;
 
   return (
     <div className="flex-1  ">

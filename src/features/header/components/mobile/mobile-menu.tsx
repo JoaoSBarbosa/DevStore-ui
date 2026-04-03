@@ -1,8 +1,8 @@
-import { MenuData } from "@/features/header/data/header-menu";
 import { MobileMenuItem } from "./mobile-menu-item";
+import { MenuList } from "@/shared/data/menu-data";
 
 export const MobileMenu = () => {
-  const menus = MenuData;
+  const menus = MenuList;
   return (
     <div className="pb-6">
       {menus.map((menu) => (
