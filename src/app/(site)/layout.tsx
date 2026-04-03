@@ -1,7 +1,7 @@
-import Footer from "@/features/footer/footer";
-import { Header, HeaderProvider } from "@/features/header";
-import Home from "@/features/home";
 import React from "react";
+import { Footer } from "@/features/footer";
+import { Header, HeaderProvider } from "@/features/header";
+import { Newsletter } from "@/features/newsletter";
 
 export default function SiteLayout({
   children,
@@ -13,7 +13,7 @@ export default function SiteLayout({
       </HeaderProvider>
 
       {children}
-
+      <Newsletter />
       <Footer />
     </div>
   );

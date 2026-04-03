@@ -1,14 +1,10 @@
 "use client";
-
-import Image from "next/image";
-import Link from "next/link";
-import { HeaderIcon } from "./components/common/header-icon";
 import { useHeader } from "./context/use-header";
-
 import { HeaderDesktopContainer } from "./components/desktop/header-desktop-container";
 import { HeaderMobileContainer } from "./components/mobile/header-mobile-container";
 import { HeaderActions } from "./components/common/header-actions";
 import { HeaderLogo } from "./components/common/header-logo";
+import { Container } from "@/shared/layout/container";
 
 export default function Header() {
   const { toggleMenu, isMenuOpen } = useHeader();
@@ -20,16 +16,13 @@ export default function Header() {
         R$ 199,00. <strong> APROVEITA!</strong>
       </div>
 
-      <div className="p-6 w-full max-w-6xl mx-auto">
+      <Container>
         <div className=" gap-2 flex items-center">
           <HeaderLogo />
-
           <HeaderDesktopContainer />
-
           <HeaderActions />
         </div>
-      </div>
-
+      </Container>
       <HeaderMobileContainer />
     </header>
   );
