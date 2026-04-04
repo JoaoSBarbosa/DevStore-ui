@@ -31,6 +31,10 @@ export const FooterCredits = () => {
           href="https://github.com/JoaoSBarbosa"
           icon="/assets/ui/github-line.png"
         />
+
+        <div className="flex justify-center absolute right-8">
+          <FooterButton href="/" icon="/assets/ui/arrow-up-line.png" />
+        </div>
       </div>
     </FooterRowContainer>
   );

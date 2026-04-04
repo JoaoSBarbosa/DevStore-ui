@@ -1,8 +1,8 @@
 import Link from "next/link";
-import { MenuData } from "../../data/header-menu";
+import { MenuList } from "../../../../shared/data/menu-data";
 
 export const DesktopMenuItems = () => {
-  const menus = MenuData;
+  const menus = MenuList;
 
   return (
     <ul className="flex items-center gap-10 font-medium text-md text-gray-500">

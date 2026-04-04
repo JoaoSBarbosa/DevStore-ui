@@ -3,21 +3,21 @@ export const MenuList: Menu[] = [
   {
     id: 1,
     label: "Camisa",
-    href: "/categories/shirts",
+    href: "/categoria/camisetas",
   },
   {
     id: 2,
     label: "Kits",
-    href: "/categories/kit",
+    href: "/categoria/kits",
   },
   {
     id: 3,
     label: "Acessórios",
-    href: "/categories/accessories",
+    href: "/categoria/acessorios",
   },
   {
     id: 4,
     label: "Eletrônicos",
-    href: "/categories/electronics",
+    href: "/categoria/eletronicos",
   },
 ];
