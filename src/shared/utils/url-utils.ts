@@ -1,6 +1,6 @@
 export function getBaseUrl() {
   if (typeof window === "undefined") {
-    return ""; // SSR safe
+    return "";
   }
 
   return window.location.origin;
@@ -25,9 +25,6 @@ export function getProductUrl(productId: number) {
   return `${base}/product/${productId}`;
 }
 
-/**
- * Monta qualquer rota baseada no path
- */
 export function buildUrl(path: string) {
   const base = getBaseUrl();
 

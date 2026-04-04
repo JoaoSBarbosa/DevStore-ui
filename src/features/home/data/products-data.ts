@@ -31,19 +31,19 @@ export const BestSellersData: Product[] = [
     slug: "camisetas",
   },
   {
-    id: 4,
+    id: 10,
     name: "Camisa React - Preta",
     price: 69.99,
     liked: true,
     image: "/assets/products/camiseta-react-preta.png",
-    paymentOptions: `Em até 2x de R$ 35,00 sem juros`,
+    paymentOptions: "Em até 2x de R$ 35,00 sem juros",
     slug: "camisetas",
   },
 ];
 
 export const MostViewedData: Product[] = [
   {
-    id: 5,
+    id: 20,
     name: "Boné DevWeb - Preto",
     price: 59.99,
     liked: false,
@@ -52,7 +52,7 @@ export const MostViewedData: Product[] = [
     slug: "acessorios",
   },
   {
-    id: 6,
+    id: 17,
     name: "Boné DevWeb - Azul",
     price: 59.99,
     liked: false,
@@ -61,7 +61,7 @@ export const MostViewedData: Product[] = [
     slug: "acessorios",
   },
   {
-    id: 7,
+    id: 19,
     name: "Boné DevWeb - Cinza",
     price: 59.99,
     liked: false,
@@ -70,12 +70,12 @@ export const MostViewedData: Product[] = [
     slug: "acessorios",
   },
   {
-    id: 8,
+    id: 7,
     name: "Camisa React Native - Preta",
     price: 69.99,
     liked: false,
     image: "/assets/products/camiseta-react-native.png",
-    paymentOptions: `Em até 2x de R$ 35,00 sem juros`,
-    slug: "acessorios",
+    paymentOptions: "Em até 2x de R$ 35,00 sem juros",
+    slug: "camisetas",
   },
 ];

@@ -2,7 +2,7 @@ import { Product } from "@/features/home/types/product-type";
 
 export const Accessories: Product[] = [
   {
-    id: 10,
+    id: 16,
     name: "Boné Dev - Azul Claro",
     price: 59.99,
     liked: false,
@@ -11,7 +11,7 @@ export const Accessories: Product[] = [
     slug: "acessorios",
   },
   {
-    id: 11,
+    id: 17,
     name: "Boné Dev - Azul",
     price: 59.99,
     liked: false,
@@ -20,7 +20,7 @@ export const Accessories: Product[] = [
     slug: "acessorios",
   },
   {
-    id: 12,
+    id: 18,
     name: "Boné Dev - Branco",
     price: 59.99,
     liked: false,
@@ -29,30 +29,30 @@ export const Accessories: Product[] = [
     slug: "acessorios",
   },
   {
-    id: 13,
+    id: 19,
     name: "Boné Dev - Cinza",
     price: 69.99,
     liked: true,
     image: "/assets/products/bone-dev-cinza.png",
-    paymentOptions: `Em até 2x de R$ 35,00 sem juros`,
+    paymentOptions: "Em até 2x de R$ 35,00 sem juros",
     slug: "acessorios",
   },
   {
-    id: 14,
-    name: "Boné Dev - Preta",
+    id: 20,
+    name: "Boné Dev - Preto",
     price: 69.99,
     liked: false,
     image: "/assets/products/bone-dev-preto.png",
-    paymentOptions: `Em até 2x de R$ 35,00 sem juros`,
+    paymentOptions: "Em até 2x de R$ 35,00 sem juros",
     slug: "acessorios",
   },
   {
-    id: 15,
-    name: "Boné Dev - Preta 2",
+    id: 21,
+    name: "Boné Dev - Preto 2",
     price: 69.99,
     liked: false,
     image: "/assets/products/bone-dev-preto2.png",
-    paymentOptions: `Em até 2x de R$ 35,00 sem juros`,
+    paymentOptions: "Em até 2x de R$ 35,00 sem juros",
     slug: "acessorios",
   },
 ];
