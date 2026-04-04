@@ -4,13 +4,15 @@ import { useProduct } from "../context/use-product";
 import { useState } from "react";
 
 export const ProductToolbar = () => {
-  const { toggleFilter } = useProduct();
+  const { toggleFilter, product } = useProduct();
   const [sort, setSort] = useState("");
+
+  const count = product?.length ? product?.length : 0;
 
   return (
     <div className="flex flex-col lg:flex-row justify-between lg:items-center ">
       <div className=" text-3xl">
-        <strong>12</strong> Produtos
+        <strong>{count}</strong> Produtos
       </div>
       {/* filtros */}
 

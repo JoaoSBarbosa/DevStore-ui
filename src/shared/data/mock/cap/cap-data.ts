@@ -1,0 +1,52 @@
+import { Product } from "@/features/home/types/product-type";
+
+export const Caps: Product[] = [
+  {
+    id: 10,
+    name: "Boné Dev - Azul Claro",
+    price: 59.99,
+    liked: false,
+    image: "/assets/products/bone-dev-azul-claro.png",
+    paymentOptions: "Em até 2x de R$ 30,00 sem juros",
+  },
+  {
+    id: 11,
+    name: "Boné Dev - Azul",
+    price: 59.99,
+    liked: false,
+    image: "/assets/products/bone-dev-azul.png",
+    paymentOptions: "Em até 2x de R$ 30,00 sem juros",
+  },
+  {
+    id: 12,
+    name: "Boné Dev - Branco",
+    price: 59.99,
+    liked: false,
+    image: "/assets/products/bone-dev-branco.png",
+    paymentOptions: "Em até 2x de R$ 30,00 sem juros",
+  },
+  {
+    id: 13,
+    name: "Boné Dev - Cinza",
+    price: 69.99,
+    liked: true,
+    image: "/assets/products/bone-dev-cinza.png",
+    paymentOptions: `Em até 2x de R$ 35,00 sem juros`,
+  },
+  {
+    id: 14,
+    name: "Boné Dev - Preta",
+    price: 69.99,
+    liked: false,
+    image: "/assets/products/bone-dev-preto.png",
+    paymentOptions: `Em até 2x de R$ 35,00 sem juros`,
+  },
+  {
+    id: 15,
+    name: "Boné Dev - Preta 2",
+    price: 69.99,
+    liked: false,
+    image: "/assets/products/bone-dev-preto2.png",
+    paymentOptions: `Em até 2x de R$ 35,00 sem juros`,
+  },
+];

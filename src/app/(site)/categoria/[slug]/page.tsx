@@ -1,12 +1,11 @@
+import { ProductCard } from "@/features/home/components/product-card";
 import { Breadcrumb } from "@/features/product-listing/components/breadcrumb";
 import { ProductContainer } from "@/features/product-listing/components/product-container";
-import { ProductGrid } from "@/features/product-listing/components/product-grid";
 import { ProductToolbar } from "@/features/product-listing/components/product-toolbar";
-import { ProductContext } from "@/features/product-listing/context/product-context";
+import { ProductInitializer } from "@/features/product-listing/context/product-initializer";
 import { ProductProvider } from "@/features/product-listing/context/product-provider";
 import { ProductListingLayout } from "@/features/product-listing/layout/product-listing-layout";
-import { Container } from "@/shared/layout/container";
-import Link from "next/link";
+import { ProductData } from "@/shared/data/products-data";
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -18,12 +17,16 @@ export default async function Page({ params, searchParams }: Props) {
 
   console.log("Slug:", slug);
   console.log("Filters:", filters);
+
+  const product = ProductData?.find((item) => item.slug === slug)?.data;
+
   return (
     <ProductProvider>
+      <ProductInitializer initialProducts={product} />
       <ProductListingLayout>
         <Breadcrumb />
         <ProductToolbar />
-        <ProductContainer />
+        <ProductContainer slug={slug} />
       </ProductListingLayout>
     </ProductProvider>
   );

@@ -44,7 +44,7 @@ export const MostViewedData: Product[] = [
     name: "Boné DevWeb - Preto",
     price: 59.99,
     liked: false,
-    image: "/assets/products/bone-dev7-preto.png",
+    image: "/assets/products/bone-dev-preto.png",
     paymentOptions: "Em até 2x de R$ 30,00 sem juros",
   },
   {
@@ -52,7 +52,7 @@ export const MostViewedData: Product[] = [
     name: "Boné DevWeb - Azul",
     price: 59.99,
     liked: false,
-    image: "/assets/products/bone-dev7-azul.png",
+    image: "/assets/products/bone-dev-azul.png",
     paymentOptions: "Em até 2x de R$ 30,00 sem juros",
   },
   {
@@ -60,7 +60,7 @@ export const MostViewedData: Product[] = [
     name: "Boné DevWeb - Cinza",
     price: 59.99,
     liked: false,
-    image: "/assets/products/bone-dev7-cinza.png",
+    image: "/assets/products/bone-dev-cinza.png",
     paymentOptions: "Em até 2x de R$ 30,00 sem juros",
   },
   {

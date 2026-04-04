@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { ProductContext } from "./product-context";
+import { Product } from "@/features/home/types/product-type";
 
 type ProductProviderProps = {
   children: React.ReactNode;
@@ -8,7 +9,7 @@ type ProductProviderProps = {
 
 export const ProductProvider = ({ children }: ProductProviderProps) => {
   const [isFilterOpen, setIsFilterOpen] = useState(false);
-
+  const [product, setProduct] = useState<Product[] | null>(null);
   const toggleFilter = () => {
     setIsFilterOpen((prev) => !prev);
   };
@@ -18,6 +19,9 @@ export const ProductProvider = ({ children }: ProductProviderProps) => {
       value={{
         isFilterOpen,
         toggleFilter,
+
+        product,
+        setProduct,
       }}
     >
       {children}

@@ -1,5 +1,6 @@
 import { FooterButton } from "../components/footer-button";
 import { FooterRowContainer } from "../components/footer-row-container";
+import { ScrollTopButton } from "../components/scroll-top-button";
 
 export const FooterCredits = () => {
   return (
@@ -20,21 +21,22 @@ export const FooterCredits = () => {
         <FooterButton
           href="https://joaobarbosadev.vercel.app/"
           icon="/assets/ui/code-s-slash-line.png"
+          isBlack={true}
         />
 
         <FooterButton
           href="https://www.linkedin.com/in/devjbarbosa/"
           icon="/assets/ui/linkedin-line.png"
+          isBlack={true}
         />
 
         <FooterButton
           href="https://github.com/JoaoSBarbosa"
           icon="/assets/ui/github-line.png"
+          isBlack={true}
         />
 
-        <div className="flex justify-center absolute right-8">
-          <FooterButton href="/" icon="/assets/ui/arrow-up-line.png" />
-        </div>
+        <ScrollTopButton />
       </div>
     </FooterRowContainer>
   );
