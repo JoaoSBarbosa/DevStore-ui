@@ -8,7 +8,7 @@ export const Shirts: Product[] = [
     liked: false,
     image: "/assets/products/camiseta-node.png",
     paymentOptions: "Em até 2x de R$ 30,00 sem juros",
-    slug: "camiseta",
+    slug: "camisetas",
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ export const Shirts: Product[] = [
     liked: false,
     image: "/assets/products/camiseta-laravel-branca.png",
     paymentOptions: "Em até 2x de R$ 30,00 sem juros",
-    slug: "camiseta",
+    slug: "camisetas",
   },
   {
     id: 3,
@@ -26,7 +26,7 @@ export const Shirts: Product[] = [
     liked: false,
     image: "/assets/products/camiseta-laravel-preta.png",
     paymentOptions: "Em até 2x de R$ 30,00 sem juros",
-    slug: "camiseta",
+    slug: "camisetas",
   },
   {
     id: 4,
@@ -35,7 +35,7 @@ export const Shirts: Product[] = [
     liked: true,
     image: "/assets/products/camiseta-css.png",
     paymentOptions: `Em até 2x de R$ 35,00 sem juros`,
-    slug: "camiseta",
+    slug: "camisetas",
   },
   {
     id: 5,
@@ -44,7 +44,7 @@ export const Shirts: Product[] = [
     liked: true,
     image: "/assets/products/camiseta-html.png",
     paymentOptions: `Em até 2x de R$ 35,00 sem juros`,
-    slug: "camiseta",
+    slug: "camisetas",
   },
   {
     id: 6,
@@ -53,7 +53,7 @@ export const Shirts: Product[] = [
     liked: true,
     image: "/assets/products/camiseta-js.png",
     paymentOptions: `Em até 2x de R$ 35,00 sem juros`,
-    slug: "camiseta",
+    slug: "camisetas",
   },
   {
     id: 7,
@@ -62,7 +62,7 @@ export const Shirts: Product[] = [
     liked: true,
     image: "/assets/products/camiseta-react-native.png",
     paymentOptions: `Em até 2x de R$ 35,00 sem juros`,
-    slug: "camiseta",
+    slug: "camisetas",
   },
   {
     id: 8,
@@ -71,7 +71,7 @@ export const Shirts: Product[] = [
     liked: true,
     image: "/assets/products/camiseta-laravel-preta.png",
     paymentOptions: `Em até 2x de R$ 35,00 sem juros`,
-    slug: "camiseta",
+    slug: "camisetas",
   },
   {
     id: 9,
@@ -80,6 +80,6 @@ export const Shirts: Product[] = [
     liked: true,
     image: "/assets/products/camiseta-node-preta.png",
     paymentOptions: `Em até 2x de R$ 35,00 sem juros`,
-    slug: "camiseta",
+    slug: "camisetas",
   },
 ];

@@ -7,7 +7,7 @@ type ProductCardProps = {
   product: Product;
 };
 export const ProductCard = ({ product }: ProductCardProps) => {
-  const baseUrl = `/products/${product.id}`;
+  const baseUrl = `/product/${product.id}`;
 
   const [liked, setLiked] = useState<boolean>(product.liked);
 

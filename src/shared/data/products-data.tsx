@@ -1,6 +1,6 @@
 import { Shirts } from "@/shared/data/mock/shirts/shirt-data";
 import { ProductDataMock } from "../types/mock/product-type";
-import { Caps } from "./mock/cap/cap-data";
+import { Accessories } from "./mock/acessories/accessories-data";
 
 export const ProductData: ProductDataMock[] = [
   {
@@ -11,6 +11,6 @@ export const ProductData: ProductDataMock[] = [
   {
     slug: "acessorios",
     title: "Acessórios",
-    data: Caps,
+    data: Accessories,
   },
 ];

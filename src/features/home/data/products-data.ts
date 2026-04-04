@@ -1,7 +1,6 @@
 import { MostViewedProduct } from "./../sections/most-viewed/most-viewed-product";
 
 import { Product } from "../types/product-type";
-import { fa } from "zod/locales";
 
 export const BestSellersData: Product[] = [
   {
@@ -11,6 +10,7 @@ export const BestSellersData: Product[] = [
     liked: true,
     image: "/assets/products/camiseta-node.png",
     paymentOptions: "Em até 2x de R$ 35,00 sem juros",
+    slug: "camisetas",
   },
   {
     id: 2,
@@ -19,6 +19,7 @@ export const BestSellersData: Product[] = [
     liked: true,
     image: "/assets/products/camiseta-laravel-branca.png",
     paymentOptions: "Em até 2x de R$ 35,00 sem juros",
+    slug: "camisetas",
   },
   {
     id: 3,
@@ -27,6 +28,7 @@ export const BestSellersData: Product[] = [
     liked: true,
     image: "/assets/products/camiseta-laravel-azul.png",
     paymentOptions: "Em até 2x de R$ 35,00 sem juros",
+    slug: "camisetas",
   },
   {
     id: 4,
@@ -35,6 +37,7 @@ export const BestSellersData: Product[] = [
     liked: true,
     image: "/assets/products/camiseta-react-preta.png",
     paymentOptions: `Em até 2x de R$ 35,00 sem juros`,
+    slug: "camisetas",
   },
 ];
 

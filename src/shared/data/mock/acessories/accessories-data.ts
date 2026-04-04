@@ -1,6 +1,6 @@
 import { Product } from "@/features/home/types/product-type";
 
-export const Caps: Product[] = [
+export const Accessories: Product[] = [
   {
     id: 10,
     name: "Boné Dev - Azul Claro",
