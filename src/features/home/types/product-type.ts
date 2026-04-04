@@ -4,5 +4,6 @@ export interface Product {
   price: number;
   image: string;
   liked: boolean;
+  slug: string;
   paymentOptions?: string;
 }

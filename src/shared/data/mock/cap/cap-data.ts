@@ -8,6 +8,7 @@ export const Caps: Product[] = [
     liked: false,
     image: "/assets/products/bone-dev-azul-claro.png",
     paymentOptions: "Em até 2x de R$ 30,00 sem juros",
+    slug: "acessorios",
   },
   {
     id: 11,
@@ -16,6 +17,7 @@ export const Caps: Product[] = [
     liked: false,
     image: "/assets/products/bone-dev-azul.png",
     paymentOptions: "Em até 2x de R$ 30,00 sem juros",
+    slug: "acessorios",
   },
   {
     id: 12,
@@ -24,6 +26,7 @@ export const Caps: Product[] = [
     liked: false,
     image: "/assets/products/bone-dev-branco.png",
     paymentOptions: "Em até 2x de R$ 30,00 sem juros",
+    slug: "acessorios",
   },
   {
     id: 13,
@@ -32,6 +35,7 @@ export const Caps: Product[] = [
     liked: true,
     image: "/assets/products/bone-dev-cinza.png",
     paymentOptions: `Em até 2x de R$ 35,00 sem juros`,
+    slug: "acessorios",
   },
   {
     id: 14,
@@ -40,6 +44,7 @@ export const Caps: Product[] = [
     liked: false,
     image: "/assets/products/bone-dev-preto.png",
     paymentOptions: `Em até 2x de R$ 35,00 sem juros`,
+    slug: "acessorios",
   },
   {
     id: 15,
@@ -48,5 +53,6 @@ export const Caps: Product[] = [
     liked: false,
     image: "/assets/products/bone-dev-preto2.png",
     paymentOptions: `Em até 2x de R$ 35,00 sem juros`,
+    slug: "acessorios",
   },
 ];

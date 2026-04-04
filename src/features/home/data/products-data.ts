@@ -46,6 +46,7 @@ export const MostViewedData: Product[] = [
     liked: false,
     image: "/assets/products/bone-dev-preto.png",
     paymentOptions: "Em até 2x de R$ 30,00 sem juros",
+    slug: "acessorios",
   },
   {
     id: 6,
@@ -54,6 +55,7 @@ export const MostViewedData: Product[] = [
     liked: false,
     image: "/assets/products/bone-dev-azul.png",
     paymentOptions: "Em até 2x de R$ 30,00 sem juros",
+    slug: "acessorios",
   },
   {
     id: 7,
@@ -62,6 +64,7 @@ export const MostViewedData: Product[] = [
     liked: false,
     image: "/assets/products/bone-dev-cinza.png",
     paymentOptions: "Em até 2x de R$ 30,00 sem juros",
+    slug: "acessorios",
   },
   {
     id: 8,
@@ -70,5 +73,6 @@ export const MostViewedData: Product[] = [
     liked: false,
     image: "/assets/products/camiseta-react-native.png",
     paymentOptions: `Em até 2x de R$ 35,00 sem juros`,
+    slug: "acessorios",
   },
 ];
