@@ -1,10 +1,10 @@
 import {
-  Product,
   Breadcrumb,
   ProductToolbar,
   ProductInitializer,
   ProductProvider,
   ProductListingLayout,
+  ProductCategoryContainer,
 } from "@/features/product-listing";
 import { ProductData } from "@/shared/data/products-data";
 
@@ -26,8 +26,7 @@ export default async function Page({ params, searchParams }: Props) {
       <ProductInitializer initialProducts={product} />
       <ProductListingLayout>
         <Breadcrumb />
-        <ProductToolbar />
-        <Product slug={slug} />
+        <ProductCategoryContainer />
       </ProductListingLayout>
     </ProductProvider>
   );
