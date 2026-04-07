@@ -3,18 +3,18 @@ import { useEffect } from "react";
 import { useProduct } from "../context/use-product";
 import { Filter } from "./filter/filter";
 import { ProductGrid } from "./product-grid";
-import { ProductData } from "@/shared/data/products-data";
+import { FilterSidebar } from "./filter/filters-sidebar";
 
-type ProductContainerProps = {
+type ProductProps = {
   slug: string;
 };
 
-export const ProductContainer = ({ slug }: ProductContainerProps) => {
+export const Product = ({ slug }: ProductProps) => {
   const { product } = useProduct();
 
   return (
-    <div className="flex flex-col lg:flex-row my-4 gap-6">
-      <Filter />
+    <div className="flex flex-col lg:flex-row my-8 gap-8">
+      <FilterSidebar />
 
       <ProductGrid products={product} />
     </div>

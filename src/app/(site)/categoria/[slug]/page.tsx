@@ -1,10 +1,11 @@
-import { ProductCard } from "@/features/home/components/product-card";
-import { Breadcrumb } from "@/features/product-listing/components/breadcrumb";
-import { ProductContainer } from "@/features/product-listing/components/product-container";
-import { ProductToolbar } from "@/features/product-listing/components/product-toolbar";
-import { ProductInitializer } from "@/features/product-listing/context/product-initializer";
-import { ProductProvider } from "@/features/product-listing/context/product-provider";
-import { ProductListingLayout } from "@/features/product-listing/layout/product-listing-layout";
+import {
+  Product,
+  Breadcrumb,
+  ProductToolbar,
+  ProductInitializer,
+  ProductProvider,
+  ProductListingLayout,
+} from "@/features/product-listing";
 import { ProductData } from "@/shared/data/products-data";
 
 type Props = {
@@ -26,7 +27,7 @@ export default async function Page({ params, searchParams }: Props) {
       <ProductListingLayout>
         <Breadcrumb />
         <ProductToolbar />
-        <ProductContainer slug={slug} />
+        <Product slug={slug} />
       </ProductListingLayout>
     </ProductProvider>
   );

@@ -10,7 +10,7 @@ export const ProductToolbar = () => {
   const count = product?.length ? product?.length : 0;
 
   return (
-    <div className="flex flex-col lg:flex-row justify-between lg:items-center ">
+    <div className="gap-2 flex flex-col lg:flex-row justify-between lg:items-center ">
       <div className=" text-3xl">
         <strong>{count}</strong> Produtos
       </div>
