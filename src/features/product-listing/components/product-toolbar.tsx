@@ -16,7 +16,7 @@ export const ProductToolbar = ({
   const { toggleFilter, product } = useProduct();
   const queryString = useQueryString();
   const order = queryString.get("order") ?? "views";
-  const count = product?.length ? product?.length : 0;
+  const count = product?.data?.length ? product?.data.length : 0;
   const handleSelectChange = (e: ChangeEvent<HTMLSelectElement>) => {
     queryString.set("order", e.target.value);
   };

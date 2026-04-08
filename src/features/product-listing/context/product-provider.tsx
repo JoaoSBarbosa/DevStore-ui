@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { ProductContext } from "./product-context";
 import { Product } from "@/features/home/types/product-type";
+import { ProductDataMock } from "@/shared/types/mock/product-type";
 
 type ProductProviderProps = {
   children: React.ReactNode;
@@ -9,7 +10,7 @@ type ProductProviderProps = {
 
 export const ProductProvider = ({ children }: ProductProviderProps) => {
   const [isFilterOpen, setIsFilterOpen] = useState(false);
-  const [product, setProduct] = useState<Product[] | null>(null);
+  const [product, setProduct] = useState<ProductDataMock | null>(null);
   const toggleFilter = () => {
     setIsFilterOpen((prev) => !prev);
   };

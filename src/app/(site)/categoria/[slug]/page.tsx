@@ -19,7 +19,7 @@ export default async function Page({ params, searchParams }: Props) {
   console.log("Slug:", slug);
   console.log("Filters:", filters);
 
-  const product = ProductData?.find((item) => item.slug === slug)?.data;
+  const product = ProductData?.find((item) => item.slug === slug);
 
   return (
     <ProductProvider>

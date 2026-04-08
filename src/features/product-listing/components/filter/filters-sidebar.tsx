@@ -1,36 +1,34 @@
 "use client";
+import { ProductFiltered } from "@/shared/types/mock/product-type";
 import { useProduct } from "../../context/use-product";
 import { filters } from "../../data/filter";
+import { FilterGroup } from "../filter-group";
+import { fi } from "zod/locales";
 
 type FilterSidebarProps = {
   isFilterOpen: boolean;
   setIsFilterOpen: (value: boolean) => void;
+  filters?: ProductFiltered[];
 };
 export const FilterSidebar = ({
   isFilterOpen,
   setIsFilterOpen,
+  filters,
 }: FilterSidebarProps) => {
   return (
     <div
-      className={`flex-1 lg:max-w-70 flex flex-col gap-4 ${isFilterOpen ? "flex" : "hidden"} lg:flex`}
+      className={` flex-1 lg:max-w-70 flex flex-col gap-4 ${isFilterOpen ? "flex" : "hidden"} lg:flex`}
     >
-      {filters.map((item) => (
-        <div key={item.id}>
-          <h3 className="text-xl font-semibold border-b border-gray-300 mb-6 pb-2">
-            {item.title}
-          </h3>
+      {filters &&
+        filters?.map((item) => <FilterGroup key={item.id} filters={item} />)}
 
-          <div className="flex flex-col gap-2 text-gray-500 text-xl">
-            {item.options.map((option) => (
-              <label key={option.label} className="flex items-center gap-2">
-                <input type={item.type} className="" />
-
-                {option.label}
-              </label>
-            ))}
+      {!filters && (
+        <div className="border border-gray-300 rounded-lg p-4">
+          <div className="flex flex-col">
+            <h2>Sem filtros disponíveis</h2>
           </div>
         </div>
-      ))}
+      )}
     </div>
   );
 };

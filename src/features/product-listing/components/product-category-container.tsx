@@ -19,10 +19,11 @@ export const ProductCategoryContainer = () => {
 
       <div className="flex flex-col lg:flex-row my-8 gap-8">
         <FilterSidebar
+          filters={product?.filters}
           isFilterOpen={isFilterOpened}
           setIsFilterOpen={setIsFilterOpen}
         />
-        <ProductGrid products={product} />
+        <ProductGrid products={product?.data} />
       </div>
     </div>
   );
