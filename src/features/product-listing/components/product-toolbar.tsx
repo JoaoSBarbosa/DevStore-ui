@@ -1,7 +1,8 @@
 "use client";
 import Image from "next/image";
 import { useProduct } from "../context/use-product";
-import { useState } from "react";
+import { ChangeEvent, useState } from "react";
+import { useQueryString } from "@/shared/hooks/use-querystring";
 
 type ProductToolbarProps = {
   isFilterOpen: boolean;
@@ -13,10 +14,12 @@ export const ProductToolbar = ({
   setIsFilterOpen,
 }: ProductToolbarProps) => {
   const { toggleFilter, product } = useProduct();
-  const [sort, setSort] = useState("");
-
+  const queryString = useQueryString();
+  const order = queryString.get("order") ?? "views";
   const count = product?.length ? product?.length : 0;
-
+  const handleSelectChange = (e: ChangeEvent<HTMLSelectElement>) => {
+    queryString.set("order", e.target.value);
+  };
   return (
     <div className="gap-6 flex flex-col lg:flex-row justify-between lg:items-center">
       <div className=" text-3xl">
@@ -27,20 +30,20 @@ export const ProductToolbar = ({
         className={`flex w-full lg:max-w-70  flex-row items-center justify-end gap-4 `}
       >
         <select
-          value={sort}
-          onChange={(e) => setSort(e.target.value)}
-          className="bg-white flex-1 px-4 max-w-40 lg:w-full lg:px-6 h-14 border border-gray-200 outline-0 rounded-sm text-gray-500"
+          defaultValue={order}
+          onChange={handleSelectChange}
+          className="bg-white flex-1 px-4  lg:w-full lg:px-6 h-14 border border-gray-200 outline-0 rounded-sm text-gray-500"
         >
           <option value="" className="lg:hidden">
-            Ordenar
+            Limpar
           </option>
-          <option value="">Mais relevantes</option>
-          <option value="">Menor preço</option>
-          <option value="">Maior preço</option>
+          <option value="views">Popularidade</option>
+          <option value="price">Por preço</option>
+          <option value="selling">Mais vendidos</option>
         </select>
 
         <button
-          className="flex-1 bg-white max-w-40 lg:w-full px-4 lg:px-6 h-14 border border-gray-200 rounded-sm text-gray-500 gap-4 cursor-pointer outline-0 right-0 flex justify-between items-center lg:hidden "
+          className="flex-1 bg-white  lg:w-full px-4 lg:px-6 h-14 border border-gray-200 rounded-sm text-gray-500 gap-4 cursor-pointer outline-0 right-0 flex justify-between items-center lg:hidden "
           type="button"
           onClick={() => setIsFilterOpen(!isFilterOpen)}
         >
