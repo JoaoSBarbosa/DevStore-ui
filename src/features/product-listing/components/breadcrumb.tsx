@@ -4,7 +4,7 @@ import { useProduct } from "../context/use-product";
 
 export const Breadcrumb = () => {
   const { product } = useProduct();
-  const slug = product?.[0]?.slug;
+  const slug = product?.data?.[0]?.slug;
   return (
     <div className="flex gap-1 my-4 text-gray-400">
       <Link href="/" className="hover:text-blue-500 hover:underline">
