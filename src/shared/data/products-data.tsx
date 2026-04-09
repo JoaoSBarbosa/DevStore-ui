@@ -9,36 +9,58 @@ export const ProductData: ProductDataMock[] = [
     data: Shirts,
     filters: [
       {
-        id: 1,
+        id: "tecnologia",
         title: "Tecnologia",
         options: [
-          { id: 1, label: "React Native", value: "react-native" },
-          { id: 2, label: "Node JS", value: "node" },
-          { id: 3, label: "Laravel", value: "laravel" },
-          { id: 4, label: "React JS", value: "react" },
+          {
+            id: "react-native",
+            groupId: "tecnologia",
+            label: "React Native",
+            value: "react-native",
+          },
+          {
+            id: "node",
+            groupId: "tecnologia",
+            label: "Node JS",
+            value: "node",
+          },
+          {
+            id: "laravel",
+            groupId: "tecnologia",
+            label: "Laravel",
+            value: "laravel",
+          },
+          {
+            id: "react",
+            groupId: "tecnologia",
+            label: "React JS",
+            value: "react",
+          },
         ],
       },
       {
-        id: 2,
+        id: "cores",
         title: "Cores",
         options: [
-          { id: 1, label: "Preto", value: "black" },
-          { id: 2, label: "Azul", value: "blue" },
-          { id: 3, label: "Verde", value: "green" },
-          { id: 4, label: "Branco", value: "white" },
+          { id: "preto", groupId: "cores", label: "Preto", value: "black" },
+          { id: "azul", groupId: "cores", label: "Azul", value: "blue" },
+          { id: "verde", groupId: "cores", label: "Verde", value: "green" },
+          { id: "branco", groupId: "cores", label: "Branco", value: "white" },
         ],
       },
       {
-        id: 3,
+        id: "precos",
         title: "Preços",
         options: [
           {
-            id: 1,
+            id: "faixa-1",
+            groupId: "precos",
             label: "R$ 10 - R$ 50",
             value: { min: 10, max: 50 },
           },
           {
-            id: 2,
+            id: "faixa-2",
+            groupId: "precos",
             label: "R$ 50 - R$ 100",
             value: { min: 50, max: 100 },
           },
@@ -52,36 +74,58 @@ export const ProductData: ProductDataMock[] = [
     data: Accessories,
     filters: [
       {
-        id: 1,
+        id: "tecnologia",
         title: "Tecnologia",
         options: [
-          { id: 1, label: "React Native", value: "react-native" },
-          { id: 2, label: "Node JS", value: "node" },
-          { id: 3, label: "Laravel", value: "laravel" },
-          { id: 4, label: "React JS", value: "react" },
+          {
+            id: "react-native",
+            groupId: "tecnologia",
+            label: "React Native",
+            value: "react-native",
+          },
+          {
+            id: "node",
+            groupId: "tecnologia",
+            label: "Node JS",
+            value: "node",
+          },
+          {
+            id: "laravel",
+            groupId: "tecnologia",
+            label: "Laravel",
+            value: "laravel",
+          },
+          {
+            id: "react",
+            groupId: "tecnologia",
+            label: "React JS",
+            value: "react",
+          },
         ],
       },
       {
-        id: 2,
+        id: "cores",
         title: "Cores",
         options: [
-          { id: 1, label: "Preto", value: "black" },
-          { id: 2, label: "Azul", value: "blue" },
-          { id: 3, label: "Verde", value: "green" },
-          { id: 4, label: "Branco", value: "white" },
+          { id: "preto", groupId: "cores", label: "Preto", value: "black" },
+          { id: "azul", groupId: "cores", label: "Azul", value: "blue" },
+          { id: "verde", groupId: "cores", label: "Verde", value: "green" },
+          { id: "branco", groupId: "cores", label: "Branco", value: "white" },
         ],
       },
       {
-        id: 3,
+        id: "precos",
         title: "Preços",
         options: [
           {
-            id: 1,
+            id: "faixa-1",
+            groupId: "precos",
             label: "R$ 10 - R$ 50",
             value: { min: 10, max: 50 },
           },
           {
-            id: 2,
+            id: "faixa-2",
+            groupId: "precos",
             label: "R$ 50 - R$ 100",
             value: { min: 50, max: 100 },
           },

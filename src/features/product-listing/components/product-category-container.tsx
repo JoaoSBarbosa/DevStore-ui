@@ -4,7 +4,7 @@ import { useState } from "react";
 import { ProductGrid } from "..";
 import { useProduct } from "../context/use-product";
 import { FilterSidebar } from "./filter/filters-sidebar";
-import { ProductToolbar } from "./product-toolbar";
+import { ProductToolbar } from "./toolbar/product-toolbar";
 
 export const ProductCategoryContainer = () => {
   const { product } = useProduct();

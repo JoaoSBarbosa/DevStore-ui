@@ -16,7 +16,9 @@ export const useQueryString = () => {
       } else {
         params.delete(attribute);
       }
-      router.push(`${pathName}?${params.toString()}`);
+
+      const query = params.toString();
+      router.push(query ? `${pathName}?${query}` : pathName);
     },
   };
 };

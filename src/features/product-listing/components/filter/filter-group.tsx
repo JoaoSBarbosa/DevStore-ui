@@ -1,18 +1,16 @@
 "use client";
 import { useQueryString } from "@/shared/hooks/use-querystring";
-import { ProductFiltered } from "@/shared/types/mock/product-type";
-import { FilterItem } from "./filter-item";
+import { FilterGroup } from "@/shared/types/mock/product-type";
 import Image from "next/image";
 import { useState } from "react";
+import { FilterItem } from "./filter-item";
 
 type FilterGroupProps = {
-  filters?: ProductFiltered;
+  filters?: FilterGroup;
 };
 
-export const FilterGroup = ({ filters }: FilterGroupProps) => {
-  const queryString = useQueryString();
+export const FilterGroupContainer = ({ filters }: FilterGroupProps) => {
   const [accordionOpen, setAccordionOpen] = useState<boolean>(true);
-  const filterValue = queryString.get("filters") ?? "";
 
   const toggleAccordion = () => {
     setAccordionOpen((prev) => !prev);

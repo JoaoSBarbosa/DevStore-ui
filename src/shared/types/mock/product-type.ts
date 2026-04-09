@@ -5,16 +5,17 @@ export interface ProductDataMock {
   slug: string;
   title: string;
   data: Product[];
-  filters?: ProductFiltered[];
+  filters?: FilterGroup[];
 }
 
-export interface ProductFiltered {
-  id: number;
+export interface FilterGroup {
+  id: string;
   title: string;
   options: FilterOption[];
 }
 export interface FilterOption {
-  id: number;
+  id: string;
+  groupId: string;
   label: string;
   value: string | number | PriceRange;
 }
