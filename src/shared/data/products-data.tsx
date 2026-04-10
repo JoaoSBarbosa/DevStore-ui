@@ -53,13 +53,13 @@ export const ProductData: ProductDataMock[] = [
         title: "Preços",
         options: [
           {
-            id: "faixa-1",
+            id: "10-50",
             groupId: "precos",
             label: "R$ 10 - R$ 50",
             value: { min: 10, max: 50 },
           },
           {
-            id: "faixa-2",
+            id: "50-100",
             groupId: "precos",
             label: "R$ 50 - R$ 100",
             value: { min: 50, max: 100 },

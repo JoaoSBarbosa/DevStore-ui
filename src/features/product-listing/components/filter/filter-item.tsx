@@ -24,18 +24,23 @@ export const FilterItem = ({ filterOption }: FilterItemProps) => {
     queryString.set(groupId, update.join("|"));
   };
   return (
-    <div className="flex items-center gap-4">
+    <div
+      className="flex items-center gap-4 py-2 px-2 rounded-md transition hover:bg-gray-100 active:bg-gray-200"
+      style={{ touchAction: "manipulation" }}
+    >
       <input
         type="checkbox"
         id={`item-${filterOption.id}`}
         checked={isChecked}
-        className="size-6 cursor-pointer"
+        className="size-6 cursor-pointer accent-primary"
         onChange={() => toggleFilter(filterOption.groupId, filterOption.id)}
+        style={{ minWidth: 24, minHeight: 24 }}
       />
       <label
         key={filterOption.id}
         htmlFor={`item-${filterOption.id}`}
-        className="text-gray-500  text-lg cursor-pointer"
+        className="text-gray-500 text-lg cursor-pointer select-none w-full"
+        style={{ paddingTop: 4, paddingBottom: 4 }}
       >
         {filterOption.label}
       </label>
