@@ -10,7 +10,8 @@ export const Breadcrumb = () => {
       <Link href="/" className="hover:text-blue-500 hover:underline">
         Home
       </Link>{" "}
-      &gt; <span>{slug}</span>
+      &gt;
+      <span>{slug}</span>
     </div>
   );
 };

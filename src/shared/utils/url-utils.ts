@@ -19,10 +19,10 @@ export function getProductUrl(productId: number) {
   const base = getBaseUrl();
 
   if (!base) {
-    return `/product/${productId}`;
+    return `/produto/${productId}`;
   }
 
-  return `${base}/product/${productId}`;
+  return `${base}/produto/${productId}`;
 }
 
 export function buildUrl(path: string) {

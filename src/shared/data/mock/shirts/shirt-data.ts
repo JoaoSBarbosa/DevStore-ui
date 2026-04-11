@@ -9,6 +9,14 @@ export const Shirts: Product[] = [
     image: "/assets/products/camiseta-node.png",
     paymentOptions: "Em até 2x de R$ 30,00 sem juros",
     slug: "camisetas",
+    description:
+      "Camisa Node Js - Verde, feita com algodão de alta qualidade, proporcionando conforto e estilo para os amantes de tecnologia. Perfeita para mostrar seu amor pelo desenvolvimento web.",
+    sizes: [
+      { id: 1, size: "P" },
+      { id: 2, size: "M" },
+      { id: 3, size: "G" },
+      { id: 4, size: "GG" },
+    ],
   },
   {
     id: 2,
@@ -18,6 +26,14 @@ export const Shirts: Product[] = [
     image: "/assets/products/camiseta-laravel-branca.png",
     paymentOptions: "Em até 2x de R$ 30,00 sem juros",
     slug: "camisetas",
+    description:
+      "Camisa Laravel - Branca, feita com algodão de alta qualidade, proporcionando conforto e estilo para os amantes de tecnologia. Perfeita para mostrar seu amor pelo desenvolvimento web.",
+    sizes: [
+      { id: 1, size: "P" },
+      { id: 2, size: "M" },
+      { id: 3, size: "G" },
+      { id: 4, size: "GG" },
+    ],
   },
   {
     id: 3,
@@ -27,6 +43,14 @@ export const Shirts: Product[] = [
     image: "/assets/products/camiseta-laravel-azul.png",
     paymentOptions: "Em até 2x de R$ 30,00 sem juros",
     slug: "camisetas",
+    description:
+      "Camisa Laravel - Azul, feita com algodão de alta qualidade, proporcionando conforto e estilo para os amantes de tecnologia. Perfeita para mostrar seu amor pelo desenvolvimento web.",
+    sizes: [
+      { id: 1, size: "P" },
+      { id: 2, size: "M" },
+      { id: 3, size: "G" },
+      { id: 4, size: "GG" },
+    ],
   },
   {
     id: 4,
@@ -36,6 +60,14 @@ export const Shirts: Product[] = [
     image: "/assets/products/camiseta-css.png",
     paymentOptions: "Em até 2x de R$ 35,00 sem juros",
     slug: "camisetas",
+    description:
+      "Camisa CSS3 - Azul, feita com algodão de alta qualidade, proporcionando conforto e estilo para os amantes de tecnologia. Perfeita para mostrar seu amor pelo desenvolvimento web.",
+    sizes: [
+      { id: 1, size: "P" },
+      { id: 2, size: "M" },
+      { id: 3, size: "G" },
+      { id: 4, size: "GG" },
+    ],
   },
   {
     id: 5,
@@ -45,6 +77,14 @@ export const Shirts: Product[] = [
     image: "/assets/products/camiseta-html.png",
     paymentOptions: "Em até 2x de R$ 35,00 sem juros",
     slug: "camisetas",
+    description:
+      "Camisa HTML5 - Laranja, feita com algodão de alta qualidade, proporcionando conforto e estilo para os amantes de tecnologia. Perfeita para mostrar seu amor pelo desenvolvimento web.",
+    sizes: [
+      { id: 1, size: "P" },
+      { id: 2, size: "M" },
+      { id: 3, size: "G" },
+      { id: 4, size: "GG" },
+    ],
   },
   {
     id: 6,
@@ -54,6 +94,14 @@ export const Shirts: Product[] = [
     image: "/assets/products/camiseta-js.png",
     paymentOptions: "Em até 2x de R$ 35,00 sem juros",
     slug: "camisetas",
+    description:
+      "Camisa JS - Amarela, feita com algodão de alta qualidade, proporcionando conforto e estilo para os amantes de tecnologia. Perfeita para mostrar seu amor pelo desenvolvimento web.",
+    sizes: [
+      { id: 1, size: "P" },
+      { id: 2, size: "M" },
+      { id: 3, size: "G" },
+      { id: 4, size: "GG" },
+    ],
   },
   {
     id: 7,
@@ -63,6 +111,14 @@ export const Shirts: Product[] = [
     image: "/assets/products/camiseta-react-native.png",
     paymentOptions: "Em até 2x de R$ 35,00 sem juros",
     slug: "camisetas",
+    description:
+      "Camisa React Native - Preta, feita com algodão de alta qualidade, proporcionando conforto e estilo para os amantes de tecnologia. Perfeita para mostrar seu amor pelo desenvolvimento web.",
+    sizes: [
+      { id: 1, size: "P" },
+      { id: 2, size: "M" },
+      { id: 3, size: "G" },
+      { id: 4, size: "GG" },
+    ],
   },
   {
     id: 8,
@@ -72,6 +128,14 @@ export const Shirts: Product[] = [
     image: "/assets/products/camiseta-laravel-preta.png",
     paymentOptions: "Em até 2x de R$ 35,00 sem juros",
     slug: "camisetas",
+    description:
+      "Camisa Laravel - Preta, feita com algodão de alta qualidade, proporcionando conforto e estilo para os amantes de tecnologia. Perfeita para mostrar seu amor pelo desenvolvimento web.",
+    sizes: [
+      { id: 1, size: "P" },
+      { id: 2, size: "M" },
+      { id: 3, size: "G" },
+      { id: 4, size: "GG" },
+    ],
   },
   {
     id: 9,
@@ -81,6 +145,14 @@ export const Shirts: Product[] = [
     image: "/assets/products/camiseta-node-preta.png",
     paymentOptions: "Em até 2x de R$ 35,00 sem juros",
     slug: "camisetas",
+    description:
+      "Camisa Node Js - Preta, feita com algodão de alta qualidade, proporcionando conforto e estilo para os amantes de tecnologia. Perfeita para mostrar seu amor pelo desenvolvimento web.",
+    sizes: [
+      { id: 1, size: "P" },
+      { id: 2, size: "M" },
+      { id: 3, size: "G" },
+      { id: 4, size: "GG" },
+    ],
   },
   {
     id: 10,
@@ -90,9 +162,16 @@ export const Shirts: Product[] = [
     image: "/assets/products/camiseta-react-preta.png",
     paymentOptions: "Em até 2x de R$ 35,00 sem juros",
     slug: "camisetas",
+    description:
+      "Camisa React - Preta, feita com algodão de alta qualidade, proporcionando conforto e estilo para os amantes de tecnologia. Perfeita para mostrar seu amor pelo desenvolvimento web.",
+    sizes: [
+      { id: 1, size: "P" },
+      { id: 2, size: "M" },
+      { id: 3, size: "G" },
+      { id: 4, size: "GG" },
+    ],
   },
 
-  // NOVOS (faltavam)
   {
     id: 11,
     name: "Camisa Laravel - Cinza",
@@ -101,6 +180,14 @@ export const Shirts: Product[] = [
     image: "/assets/products/camiseta-Laravel-cinza.png",
     paymentOptions: "Em até 2x de R$ 35,00 sem juros",
     slug: "camisetas",
+    description:
+      "Camisa Laravel - Cinza, feita com algodão de alta qualidade, proporcionando conforto e estilo para os amantes de tecnologia. Perfeita para mostrar seu amor pelo desenvolvimento web.",
+    sizes: [
+      { id: 1, size: "P" },
+      { id: 2, size: "M" },
+      { id: 3, size: "G" },
+      { id: 4, size: "GG" },
+    ],
   },
   {
     id: 12,
@@ -110,6 +197,14 @@ export const Shirts: Product[] = [
     image: "/assets/products/camiseta-php-grafite.png",
     paymentOptions: "Em até 2x de R$ 35,00 sem juros",
     slug: "camisetas",
+    description:
+      "Camisa PHP - Grafite, feita com algodão de alta qualidade, proporcionando conforto e estilo para os amantes de tecnologia. Perfeita para mostrar seu amor pelo desenvolvimento web.",
+    sizes: [
+      { id: 1, size: "P" },
+      { id: 2, size: "M" },
+      { id: 3, size: "G" },
+      { id: 4, size: "GG" },
+    ],
   },
   {
     id: 13,
@@ -119,6 +214,14 @@ export const Shirts: Product[] = [
     image: "/assets/products/camiseta-php.png",
     paymentOptions: "Em até 2x de R$ 35,00 sem juros",
     slug: "camisetas",
+    description:
+      "Camisa PHP - Azul, feita com algodão de alta qualidade, proporcionando conforto e estilo para os amantes de tecnologia. Perfeita para mostrar seu amor pelo desenvolvimento web.",
+    sizes: [
+      { id: 1, size: "P" },
+      { id: 2, size: "M" },
+      { id: 3, size: "G" },
+      { id: 4, size: "GG" },
+    ],
   },
   {
     id: 14,
@@ -128,6 +231,14 @@ export const Shirts: Product[] = [
     image: "/assets/products/camiseta-react-azul.png",
     paymentOptions: "Em até 2x de R$ 35,00 sem juros",
     slug: "camisetas",
+    description:
+      "Camisa React - Azul, feita com algodão de alta qualidade, proporcionando conforto e estilo para os amantes de tecnologia. Perfeita para mostrar seu amor pelo desenvolvimento web.",
+    sizes: [
+      { id: 1, size: "P" },
+      { id: 2, size: "M" },
+      { id: 3, size: "G" },
+      { id: 4, size: "GG" },
+    ],
   },
   {
     id: 15,
@@ -137,5 +248,13 @@ export const Shirts: Product[] = [
     image: "/assets/products/camiseta-react-cinza.png",
     paymentOptions: "Em até 2x de R$ 35,00 sem juros",
     slug: "camisetas",
+    description:
+      "Camisa React - Cinza, feita com algodão de alta qualidade, proporcionando conforto e estilo para os amantes de tecnologia. Perfeita para mostrar seu amor pelo desenvolvimento web.",
+    sizes: [
+      { id: 1, size: "P" },
+      { id: 2, size: "M" },
+      { id: 3, size: "G" },
+      { id: 4, size: "GG" },
+    ],
   },
 ];

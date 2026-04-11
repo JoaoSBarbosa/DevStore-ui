@@ -1,11 +1,13 @@
-enum ButtonColor {
+import Image from "next/image";
+
+export enum ButtonColor {
   Primary = "bg-blue-500 text-white hover:bg-blue-600",
   Secondary = "bg-gray-500 text-white hover:bg-gray-600",
   Danger = "bg-red-500 text-white hover:bg-red-600",
 }
-enum ButtonSize {
+export enum ButtonSize {
   Small = "py-2 px-4",
-  Medium = "py-4 px-8",
+  Medium = "py-3 px-8",
   Large = "py-6 px-12",
   Default = "py-4 px-16",
 }
@@ -31,5 +33,46 @@ export const DefaultButton = ({
     >
       {label}
     </button>
+  );
+};
+
+type ButtonBadgeProps = {
+  onClick?: () => void;
+  children?: React.ReactNode;
+};
+export const ButtonBadge = ({ onClick, children }: ButtonBadgeProps) => {
+  return (
+    <div
+      className="border flex items-center justify-center border-gray-300 p-2 rounded-sm size-12 cursor-pointer"
+      onClick={onClick}
+    >
+      {children}
+    </div>
+  );
+};
+
+type FavoriteButtonProps = {
+  onClick?: () => void;
+  liked: boolean;
+};
+export const FavoriteButton = ({ onClick, liked }: FavoriteButtonProps) => {
+  return (
+    <ButtonBadge onClick={onClick}>
+      {liked ? (
+        <Image
+          src={"/assets/ui/heart-3-fill.png"}
+          alt="Heart"
+          width={24}
+          height={24}
+        />
+      ) : (
+        <Image
+          src={"/assets/ui/heart-3-line.png"}
+          alt="Heart"
+          width={24}
+          height={24}
+        />
+      )}
+    </ButtonBadge>
   );
 };

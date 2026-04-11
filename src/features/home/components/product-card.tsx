@@ -3,11 +3,12 @@ import Image from "next/image";
 import { Product } from "../types/product-type";
 import Link from "next/link";
 import { useState } from "react";
+import { FavoriteButton } from "@/shared/components/Buttons";
 type ProductCardProps = {
   product: Product;
 };
 export const ProductCard = ({ product }: ProductCardProps) => {
-  const baseUrl = `/product/${product.id}`;
+  const baseUrl = `/produto/${product.id}`;
 
   const [liked, setLiked] = useState<boolean>(product.liked);
 
@@ -17,26 +18,7 @@ export const ProductCard = ({ product }: ProductCardProps) => {
   return (
     <div className="p-6 bg-white border border-gray-200 rounded-sm flex flex-col items-center lg:items-start">
       <div className="w-full flex justify-end">
-        <div
-          className="border flex items-center justify-center border-gray-300 p-2 rounded-sm size-12 cursor-pointer"
-          onClick={toggleLike}
-        >
-          {liked ? (
-            <Image
-              src={"/assets/ui/heart-3-fill.png"}
-              alt="Heart"
-              width={24}
-              height={24}
-            />
-          ) : (
-            <Image
-              src={"/assets/ui/heart-3-line.png"}
-              alt="Heart"
-              width={24}
-              height={24}
-            />
-          )}
-        </div>
+        <FavoriteButton liked={liked} onClick={toggleLike} />
       </div>
 
       <Link href={baseUrl}>

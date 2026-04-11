@@ -6,4 +6,11 @@ export interface Product {
   liked: boolean;
   paymentOptions?: string;
   slug: string;
+  sizes?: Sizes[];
+  description?: string;
+}
+
+export interface Sizes {
+  id: number;
+  size: string;
 }
