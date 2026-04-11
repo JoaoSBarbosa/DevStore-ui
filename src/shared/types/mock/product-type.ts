@@ -1,4 +1,4 @@
-import { filters } from "./../../../features/product-listing/data/filter";
+import { filters } from "../../../features/category-listing/data/filter";
 import { Product } from "@/features/home/types/product-type";
 
 export interface ProductDataMock {

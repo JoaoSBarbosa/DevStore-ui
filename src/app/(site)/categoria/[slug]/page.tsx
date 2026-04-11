@@ -5,7 +5,7 @@ import {
   ProductProvider,
   ProductListingLayout,
   ProductCategoryContainer,
-} from "@/features/product-listing";
+} from "@/features/category-listing";
 import { ProductData } from "@/shared/data/products-data";
 
 type Props = {
