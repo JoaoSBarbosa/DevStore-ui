@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { set } from "zod";
 import { clear } from "console";
+import { getProductUrl } from "@/shared/utils/url-utils";
 
 type BannersProps = {
   banners: BannerType[];
@@ -41,22 +42,29 @@ export const Banners = ({ banners }: BannersProps) => {
   return (
     <div className="">
       <div className="relative aspect-3/1">
-        {banners.map((banner, index) => (
-          <Link
-            key={banner.id}
-            href={banner.linkUrl}
-            className="transition-all absolute inset-0"
-            style={{ opacity: activeIndex === index ? 1 : 0 }}
-          >
-            <Image
-              width={1200}
-              height={400}
-              src={banner.imageUrl}
-              alt={banner.altText || "Banner"}
-              className="rounded-lg"
-            />
-          </Link>
-        ))}
+        {banners.map((banner, index) => {
+          const isActive = index === activeIndex;
+
+          return (
+            <Link
+              key={banner.id}
+              href={`/produto/${banner.productId}`}
+              className="transition-all absolute inset-0"
+              style={{
+                opacity: activeIndex === index ? 1 : 0,
+                pointerEvents: isActive ? "auto" : "none",
+              }}
+            >
+              <Image
+                width={1200}
+                height={400}
+                src={banner.imageUrl}
+                alt={banner.altText || "Banner"}
+                className="rounded-lg"
+              />
+            </Link>
+          );
+        })}
       </div>
 
       <div className="w-full mt-4 flex justify-center gap-4">

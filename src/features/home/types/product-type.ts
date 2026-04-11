@@ -8,9 +8,15 @@ export interface Product {
   slug: string;
   sizes?: Sizes[];
   description?: string;
+  images?: ProductImage[];
 }
 
 export interface Sizes {
   id: number;
   size: string;
+}
+
+interface ProductImage {
+  id: number;
+  image: string;
 }

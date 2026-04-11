@@ -5,6 +5,7 @@ import { Product } from "@/features/home/types/product-type";
 import Image from "next/image";
 import { HeightWidth, SizeCard } from "./size-card";
 import { ProductDetail } from "./product-detail";
+import { ProductSlider } from "./product-slider";
 
 type ProductContainerProps = {
   product: Product;
@@ -14,16 +15,9 @@ export const ProductContainer = ({ product }: ProductContainerProps) => {
   return (
     <motion.div className="flex flex-col">
       <BreadcrumbProduct id={product.id} name={product.name} />
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-        <div>
-          <Image
-            src={product.image}
-            alt={product.name}
-            height={352}
-            width={357}
-            className="bg-white p-14"
-          />
-        </div>
+
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-32">
+        <ProductSlider image={product.image} name={product.name} />
 
         <ProductDetail product={product} />
       </div>
