@@ -39,11 +39,18 @@ export const DefaultButton = ({
 type ButtonBadgeProps = {
   onClick?: () => void;
   children?: React.ReactNode;
+  customClassName?: string;
+  size?: string;
 };
-export const ButtonBadge = ({ onClick, children }: ButtonBadgeProps) => {
+export const ButtonBadge = ({
+  onClick,
+  children,
+  customClassName,
+  size,
+}: ButtonBadgeProps) => {
   return (
     <div
-      className="border flex items-center justify-center border-gray-300 p-2 rounded-sm size-12 cursor-pointer"
+      className={`border flex items-center justify-center border-gray-300 p-2 rounded-sm ${size || "size-12"} cursor-pointer ${customClassName || ""}`}
       onClick={onClick}
     >
       {children}
@@ -54,10 +61,15 @@ export const ButtonBadge = ({ onClick, children }: ButtonBadgeProps) => {
 type FavoriteButtonProps = {
   onClick?: () => void;
   liked: boolean;
+  size?: string;
 };
-export const FavoriteButton = ({ onClick, liked }: FavoriteButtonProps) => {
+export const FavoriteButton = ({
+  onClick,
+  liked,
+  size,
+}: FavoriteButtonProps) => {
   return (
-    <ButtonBadge onClick={onClick}>
+    <ButtonBadge onClick={onClick} size={size}>
       {liked ? (
         <Image
           src={"/assets/ui/heart-3-fill.png"}

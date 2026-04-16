@@ -17,6 +17,16 @@ export const Shirts: Product[] = [
       { id: 3, size: "G" },
       { id: 4, size: "GG" },
     ],
+    images: [
+      {
+        id: 1,
+        image: "/assets/products/camiseta-node.png",
+      },
+      {
+        id: 2,
+        image: "/assets/products/camiseta-node.png",
+      },
+    ],
   },
   {
     id: 2,
@@ -33,6 +43,20 @@ export const Shirts: Product[] = [
       { id: 2, size: "M" },
       { id: 3, size: "G" },
       { id: 4, size: "GG" },
+    ],
+    images: [
+      {
+        id: 3,
+        image: "/assets/products/camiseta-laravel-branca.png",
+      },
+      {
+        id: 4,
+        image: "/assets/products/camiseta-laravel-Branca-2.png",
+      },
+      {
+        id: 5,
+        image: "/assets/products/camiseta-laravel-Branca-3.png",
+      },
     ],
   },
   {
@@ -51,6 +75,16 @@ export const Shirts: Product[] = [
       { id: 3, size: "G" },
       { id: 4, size: "GG" },
     ],
+    images: [
+      {
+        id: 5,
+        image: "/assets/products/camiseta-laravel-azul.png",
+      },
+      {
+        id: 6,
+        image: "/assets/products/camiseta-laravel-azul.png",
+      },
+    ],
   },
   {
     id: 4,
@@ -67,6 +101,16 @@ export const Shirts: Product[] = [
       { id: 2, size: "M" },
       { id: 3, size: "G" },
       { id: 4, size: "GG" },
+    ],
+    images: [
+      {
+        id: 7,
+        image: "/assets/products/camiseta-css.png",
+      },
+      {
+        id: 8,
+        image: "/assets/products/camiseta-css.png",
+      },
     ],
   },
   {
@@ -85,6 +129,16 @@ export const Shirts: Product[] = [
       { id: 3, size: "G" },
       { id: 4, size: "GG" },
     ],
+    images: [
+      {
+        id: 9,
+        image: "/assets/products/camiseta-html.png",
+      },
+      {
+        id: 10,
+        image: "/assets/products/camiseta-html.png",
+      },
+    ],
   },
   {
     id: 6,
@@ -101,6 +155,16 @@ export const Shirts: Product[] = [
       { id: 2, size: "M" },
       { id: 3, size: "G" },
       { id: 4, size: "GG" },
+    ],
+    images: [
+      {
+        id: 11,
+        image: "/assets/products/camiseta-js.png",
+      },
+      {
+        id: 12,
+        image: "/assets/products/camiseta-js.png",
+      },
     ],
   },
   {
@@ -119,6 +183,16 @@ export const Shirts: Product[] = [
       { id: 3, size: "G" },
       { id: 4, size: "GG" },
     ],
+    images: [
+      {
+        id: 13,
+        image: "/assets/products/camiseta-react-native.png",
+      },
+      {
+        id: 14,
+        image: "/assets/products/camiseta-react-native.png",
+      },
+    ],
   },
   {
     id: 8,
@@ -135,6 +209,16 @@ export const Shirts: Product[] = [
       { id: 2, size: "M" },
       { id: 3, size: "G" },
       { id: 4, size: "GG" },
+    ],
+    images: [
+      {
+        id: 15,
+        image: "/assets/products/camiseta-laravel-preta.png",
+      },
+      {
+        id: 16,
+        image: "/assets/products/camiseta-laravel-preta.png",
+      },
     ],
   },
   {
@@ -153,6 +237,16 @@ export const Shirts: Product[] = [
       { id: 3, size: "G" },
       { id: 4, size: "GG" },
     ],
+    images: [
+      {
+        id: 17,
+        image: "/assets/products/camiseta-node-preta.png",
+      },
+      {
+        id: 18,
+        image: "/assets/products/camiseta-node-preta.png",
+      },
+    ],
   },
   {
     id: 10,
@@ -169,6 +263,16 @@ export const Shirts: Product[] = [
       { id: 2, size: "M" },
       { id: 3, size: "G" },
       { id: 4, size: "GG" },
+    ],
+    images: [
+      {
+        id: 19,
+        image: "/assets/products/camiseta-react-preta.png",
+      },
+      {
+        id: 20,
+        image: "/assets/products/camiseta-react-preta.png",
+      },
     ],
   },
 
@@ -188,6 +292,16 @@ export const Shirts: Product[] = [
       { id: 3, size: "G" },
       { id: 4, size: "GG" },
     ],
+    images: [
+      {
+        id: 21,
+        image: "/assets/products/camiseta-laravel-cinza.png",
+      },
+      {
+        id: 22,
+        image: "/assets/products/camiseta-laravel-cinza.png",
+      },
+    ],
   },
   {
     id: 12,
@@ -204,6 +318,16 @@ export const Shirts: Product[] = [
       { id: 2, size: "M" },
       { id: 3, size: "G" },
       { id: 4, size: "GG" },
+    ],
+    images: [
+      {
+        id: 23,
+        image: "/assets/products/camiseta-php-grafite.png",
+      },
+      {
+        id: 24,
+        image: "/assets/products/camiseta-php-grafite.png",
+      },
     ],
   },
   {
@@ -222,6 +346,16 @@ export const Shirts: Product[] = [
       { id: 3, size: "G" },
       { id: 4, size: "GG" },
     ],
+    images: [
+      {
+        id: 25,
+        image: "/assets/products/camiseta-php.png",
+      },
+      {
+        id: 26,
+        image: "/assets/products/camiseta-php.png",
+      },
+    ],
   },
   {
     id: 14,
@@ -239,6 +373,16 @@ export const Shirts: Product[] = [
       { id: 3, size: "G" },
       { id: 4, size: "GG" },
     ],
+    images: [
+      {
+        id: 27,
+        image: "/assets/products/camiseta-react-azul.png",
+      },
+      {
+        id: 28,
+        image: "/assets/products/camiseta-react-azul.png",
+      },
+    ],
   },
   {
     id: 15,
@@ -255,6 +399,16 @@ export const Shirts: Product[] = [
       { id: 2, size: "M" },
       { id: 3, size: "G" },
       { id: 4, size: "GG" },
+    ],
+    images: [
+      {
+        id: 29,
+        image: "/assets/products/camiseta-react-cinza.png",
+      },
+      {
+        id: 30,
+        image: "/assets/products/camiseta-react-cinza.png",
+      },
     ],
   },
 ];

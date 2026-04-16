@@ -58,14 +58,18 @@ export const ProductDetail = ({ product }: ProductDetailProps) => {
           onClick={handleAddToSacola}
           size={ButtonSize.Medium}
         />
-        <FavoriteButton liked={liked} onClick={toggleLike} />
+        <FavoriteButton liked={liked} onClick={toggleLike} size="size-16" />
 
-        <ButtonBadge onClick={() => alert("Compartilhar produto")}>
+        <ButtonBadge
+          onClick={() => alert("Compartilhar produto")}
+          size="size-16"
+        >
           <Image
             src={"/assets/ui/share-line.png"}
             alt=""
             height={24}
             width={24}
+            className=""
           />
         </ButtonBadge>
       </div>

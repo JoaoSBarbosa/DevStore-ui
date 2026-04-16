@@ -16,7 +16,7 @@ export interface Sizes {
   size: string;
 }
 
-interface ProductImage {
+export interface ProductImage {
   id: number;
   image: string;
 }
