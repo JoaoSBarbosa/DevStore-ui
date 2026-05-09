@@ -22,18 +22,21 @@ export const FooterCredits = () => {
           href="https://joaobarbosadev.vercel.app/"
           icon="/assets/ui/code-s-slash-line.png"
           isBlack={true}
+          isNotBordered={true}
         />
 
         <FooterButton
           href="https://www.linkedin.com/in/devjbarbosa/"
           icon="/assets/ui/linkedin-line.png"
           isBlack={true}
+          isNotBordered={true}
         />
 
         <FooterButton
           href="https://github.com/JoaoSBarbosa"
           icon="/assets/ui/github-line.png"
           isBlack={true}
+          isNotBordered={true}
         />
 
         <ScrollTopButton />
